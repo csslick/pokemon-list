@@ -65,13 +65,27 @@
 }
 
 header {
-  padding: 20px;
+  padding-top: 40px;
   text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+nav button{
+  background: var(--water);
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
 }
 
 main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+main section {
   display: flex;
   padding: 20px;
   flex-wrap: wrap;
@@ -103,12 +117,16 @@ figure > a > img {
 }
 
 figure h4 {
-  margin-bottom: 1em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-size: 22px;
 }
 
 figure .id {
+  display: block;
   color: #666;
   font-size: small;
+  margin-bottom: 1em;
 }
 
 
