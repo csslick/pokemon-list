@@ -17,7 +17,7 @@ function getPokemon(num) {
 
 // default param = 1
 function getPokemonList(start_num = 1) {
-  for(var i = start_num; i <= start_num + 11; i++){
+  for(let i = start_num; i <= start_num + 11; i++){
     getPokemon(i);
   }
 }
@@ -49,11 +49,7 @@ function displayPokemon(id, name, imgUrl, types) {
   main.innerHTML += html;
 }
 
-
-/*** main start ***/
-getPokemonList();
-
-// 이전/다음 버튼
+// 더보기
 let pokemonIdx = 1;
 const nextBtn = document.getElementById('nextBtn');
 
@@ -62,3 +58,7 @@ nextBtn.addEventListener('click', function(){
   getPokemonList(pokemonIdx);
   console.log(pokemonIdx)
 })
+
+
+/*** main start ***/
+getPokemonList();
